@@ -1,209 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Bhasvar Personal Portfolio </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TO-DO.css" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="menu_bar.css">
+    <script src="menu_bar.js"></script>
+  </head>
+  <body>
+    <h1>todos</h1>
+    <form id="form">
+      <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/home.jpg">
+      <ul class="todos" id="todos"></ul>
+    </form>
+    <small>Left click to toggle completed. <br> Right click to delete todo</small>
 
-</head>
-<body>
-
-    <!-- navbar -->
-    <nav class="navbar">
-        <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">projects</a></li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- home section -->
-
-    <section class="home-section active">
-        <h1 class="hero-heading">Hello, i am <br> Shivam Bhavsar</h1>
-        <img src="img/home.jpg" class="home-img" alt="">
-    </section>
-
-    <!-- project section -->
-    <section class="project-section">
-        <h1 class="project-heading">some of my projects</h1>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="img/to-do.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">TO-DO Management</h1>
-                    <p class="project-info">
-                        Created a TO-DO management web-site using HTML,CSS and JAVA Script . I this web-site you can add tasks, delete thr task by clicking on the task and mark as done , by using Java Script there a effect where the task being strike out and a horizontal line appears on the tasks which is done.
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github" onclick="window.location.href='https://github.com/shivamBhavsar-cmd/TO_DO'" target="_blank" rel="noopener nore">githubferrer repo</button>
-                        <button class="project-btn live" onclick="window.location.href='https://shivambhavsar-cmd.github.io/TO_DO/'" target="_blank">see live</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="img/login_form2.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 02</h1>
-                    <p class="project-info">
-                        Created a login form using HTML CSS AND JAVA SCRIPT . This is an responsive page used for a login webpage page.
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github" onclick="window.location.href='https://github.com/shivamBhavsar-cmd/TO_DO'" target="_blank" rel="noopener nore">githubferrer repo</button>
-                        <button class="project-btn live">see live</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="img/project-3.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 03</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live" >see live</button> 
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="img/project-4.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 04</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section -->
-    <section class="about-section">
-        <div class="about">
-            <div class="about-img-container">
-                <img src="img/home.jpg" class="about-img" alt="">
-                <button class="download-cv-btn">downlaod cv</button>
-            </div>
-            <p class="about-info">My Self Shivam Bhavsar.I am an organized person and I like to explore different things. I was first introduced to coding in 10th classes when computer subject was added to the curriculum. Currently, I am doing Engineering in Computer Science and technology. I am learning new skills as much as I can and just exploring different domains of my interest. Seek Discomfort is my go-to target. <br>
-                Below are the details of my skills and interests.
-            </p>
-        </div>
-
-        <!-- skills -->
-        <div class="skill-section">
-            <h1 class="heading">skills</h1>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
-                    <div class="skill-level">90%</div>
-                    <h1 class="skill-name">HTML</h1>
-                    <p class="skill-info"></p>
-                </div>
-                <div class="skill-card">
-                    <img src="img/css.png" class="skill-img" alt="">
-                    <div class="skill-level">80%</div>
-                    <h1 class="skill-name">CSS</h1>
-                    <p class="skill-info"></p>
-                </div>
-                <div class="skill-card">
-                    <img src="img/js.png" class="skill-img" alt="">
-                    <div class="skill-level">60%</div>
-                    <h1 class="skill-name">JS</h1>
-                    <p class="skill-info">Beginner in Java Script </p>
-                </div>
-                <div class="skill-card">
-                    <img src="img/c.png" class="skill-img" alt="">
-                    <div class="skill-level">90%</div>
-                    <h1 class="skill-name">C Programing language</h1>
-                    <p class="skill-info"></p>
-                </div>
-                <div class="skill-card">
-                    <img src="img/c++.png" class="skill-img" alt="">
-                    <div class="skill-level">70%</div>
-                    <h1 class="skill-name">C++ Proraming language</h1>
-                    <p class="skill-info"></p>
-                </div>
-                <div class="skill-card">
-                    <img src="img/java.png" class="skill-img" alt="">
-                    <div class="skill-level">50%</div>
-                    <h1 class="skill-name">java Proraming language</h1>
-                    <p class="skill-info">Beginner JAVA programing lanugage.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- timeline -->
-        <div class="timeline">
-            <h1 class="heading">education and experience</h1>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">Secondary and Higher Secondary Education</h1>
-                    <p class="card-detail">Complited my Secondary(2019) and Higher Secondary education(2021) in Science from ST PAUL'S SENIOUR SECONDAY SCHOOL BANSWARA RAJASTHAN.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">Bachelor</h1>
-                    <p class="card-detail">Doing engineering in Computer science and technology from SRM Institute of Science and Technology Chennai (SRMIST-25)</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">Skills</h1>
-                    <p class="card-detail">Problem solving <br>
-                        Communication <br>
-                        Punctual <br>Honest <br> Helpful</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">Sports</h1>
-                    <p class="card-detail">Played District level under-17 and under-19 Cricket in 2018 2019 and 2021 . <br>
-                    I like to play Hockey , table tennis,Handball and sometimes Basketball.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">Future Goals</h1>
-                    <p class="card-detail">I want to become a successfull web and app developer and a good coder.And I want to learn new skills as much as I can.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contact section -->
-    <section class="contact-section">
-        <form class="contact-form">
-            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
-            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
-            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-            <button type="submit" class="form-submit-btn">contact</button>
-        </form>
-        <!-- map -->
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163742937!2d76.81306771991275!3d28.647279935262464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1639489002410!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        
-                    
-</footer>
-
-
-        <!-- this is ending -->
-    </section>
-    
-    <script src="app.js"></script>
-    
-
-</body>
+    <script src="TO-DO.js"></script>
+  </body>
 </html>
